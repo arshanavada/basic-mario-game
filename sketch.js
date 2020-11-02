@@ -41,7 +41,7 @@ function setup() {
     mario.addAnimation("running", mario_running);
   mario.addAnimation("collided", mario_collided);
   mario.scale = 2;
-  mario.debug = true
+  //mario.debug = true
   ground = createSprite(200, 330, 400, 20);
   ground.addImage("ground", groundImage);
   ground.x = ground.width / 2;
@@ -137,7 +137,7 @@ function spawnbricks() {
   //write code here to spawn the brick
   if (frameCount % 60 === 0) {
     var brick = createSprite(600, 120, 40, 10);
-    brick.debug = true
+   // brick.debug = true
     brick.y = Math.round(random(150, 180));
     brick.addImage(brickImage);
     brick.scale = 1;
